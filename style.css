@@ -1,0 +1,77 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+body {
+}
+.name, h2 {
+  border-bottom: #111 solid 2px;
+  margin: 0 .5em;
+}
+.name {
+  font-size: 2em;
+  padding: .75em;
+  text-align: center;
+}
+.box-one {
+  display: grid;
+  margin:0;
+}
+.contact{
+  grid-column: 1/2;
+}
+.sally {
+  grid-column: 2/3;
+  margin: auto;
+  display: none;
+}
+section {
+  margin: 0;
+}
+
+a {
+  font-size: 1.10em;
+  text-decoration: none;
+  color: #277051;
+  font-style: normal;
+}
+a:hover {
+  color: #3cb581;
+}
+h2 {
+  margin-bottom: .5em;
+}
+li {
+  margin-bottom: .25em;
+}
+.work {
+  margin-top: .25em;
+}
+.employment {
+  margin-top: .5em;
+}
+.footer {
+  border-top: #111 solid 2px;
+  margin: 0 .5em;
+  list-style-type: none;
+  padding: .5em;
+  display: flex;
+  flex-direction: row;
+}
+.footer li {
+  display: none;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  .sally {
+    display: block;
+  }
+  .box-one {
+    margin: 2.5em;
+  }
+  section {
+    margin: 2.5em;
+  }
+  .footer li {
+    display: inline-block;
+  }
+}

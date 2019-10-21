@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Sitwell Resume</title>
+  <meta name="description"
+    content="Resume for Sally Sitwell Student including education,work experience and contact info">
+    <meta name="viewport" content="width=device-width">
+     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="application-root-header"></div>
+  <div id="application-root-main"></div>
+  <div id="application-root-footer"></div>
+
+  <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+  const appRootHeader = document.querySelector('#application-root-header');
+  const appRootMain = document.querySelector('#application-root-main');
+  const appRootFooter = document.querySelector('#application-root-footer');
+  const appRootAside = document.querySelector('#application-root-aside');
+
+
+  function Header(props) {
+    return (
+      <header>
+        <h1 className="name">
+          Sally Sitwell
+        </h1>
+        <div className="box-one">
+          <div className="contact">
+            <h2>
+              Contact
+            </h2>
+            <address>
+              <ul>
+                <li>
+                  <a href="mailto:Sallysitwell@sitwellhomes.com"
+                  target="_top">Sallysitwell@sitwellhomes.com</a>
+                </li>
+                <li>
+                  <a href="tel:+311-555-2368">+311-555-2368</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <img className="sally"
+          src="https://vignette.wikia.nocookie.net/arresteddevelopment/images/f/f5/2x09_Burning_Love_%2818%29.png/revision/latest/scale-to-width-down/320?cb=20121229005858"
+          alt="Picture of Sally Sitwell">
+          </img>
+        </div>
+
+      </header>
+    );
+  }
+
+  function Main() {
+    return (
+      <main>
+        <section>
+          <header>
+            <h2>
+              Education
+            </h2>
+          </header>
+            <ul>
+              <li>
+                MBA - University of California-Irvine
+                <ul>
+                  <li className="work">
+                    Graduated <em>Cum Laude</em>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                BA - University of Southern California
+              </li>
+            </ul>
+        </section>
+        <section>
+          <header>
+            <h2>
+              Employment History
+            </h2>
+          </header>
+          <ul>
+            <li>
+              <strong>Sitwell Homes - <em>Vice President of Development</em></strong>
+              <ul>
+                <li className="work">
+                  2001 - Present
+                </li>
+                <li>
+                  Board Member
+                  <ul>
+                    <li>
+                      2011 - Present
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, pri et quidam labitur principes, pro eu aliquam definitionem, ut mei porro nusquam. Aperiri numquam verterem pri id. Ne per wisi ponderum principes, similique deterruisset usu at.
+                </li>
+              </ul>
+            </li>
+            <li className="employment">
+              <strong> Austero 2012 Congressional Campaign - <em>Campaign Manager</em></strong>
+              <ul>
+                <li className="work">
+                  2010 - 2012
+                </li>
+                <li>
+                    Ne ubique ocurreret instructior ius, et case salutatus omittantur has. Ut lorem principes eum, stet dolores oportere id mea, per ne labore singulis omittantur. Tation officiis sententiae ea eos. Delenit antiopam et his, eros solum te sea
+                </li>
+                </ul>
+            </li>
+          </ul>
+        </section>
+      </main>
+    )
+  }
+  function Footer() {
+    return (
+      <footer>
+        <ul className="footer">
+          <li>
+            Sally Sitwell
+          </li>
+          <li>
+            Sallysitwell@sitwellhomes.com
+          </li>
+          <li>
+            +311-555-2368
+          </li>
+        </ul>
+      </footer>
+    )
+  }
+
+  ReactDOM.render(<Header />, appRootHeader);
+  ReactDOM.render(<Main />, appRootMain);
+  ReactDOM.render(<Footer />, appRootFooter);
+
+</script>
+</body>
+</html>
